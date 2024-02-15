@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.html .body{
+    width: 100%;
+    height: 100%;
+}
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20240103/pngtree-vibrant-multi-layered-background-with-purple-tonal-dimensions-and-textures-image_13920353.png);
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: rgb(231, 237, 240);
+    font-style:Arial;
+    bottom: 40%;
+   
+V}
+.text h1 {
+    font-weight: 300;
+    font-size: 5vw; 
+    font-style: italic;
+    color: antiquewhite; 
+    font-family: 'Times New Roman', Times, serif;
+    bottom: 70%;
+    
+}
+.icons {
+    
+    display: block;
+
+}
+
+.rtext {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+.rtext p {
+    font-size: 12px;
+}
+.bottom {
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+.b1 {
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://www.shutterstock.com/image-illustration/abstract-design-on-black-background-260nw-2306545931.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b1 h1 {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+
+}
+.b1 p {
+    color: rgb(20, 5, 5);
+    text-align: center;
+    padding: 10px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+}    
+.b2 {
+    width: 40%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.b2 .up {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
+    background-position: center;
+    background-size: cover;
+    color: black;
+} 
+.b2 .up h1 {
+    text-align: center;
+    padding: 40px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+.b2 .up p {
+    color: rgba(19, 1, 1, 0.966);
+    text-align: center;
+    padding: 15px;
+}
+.b2 .down {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA0CYYnjHtEBuhCTI1av0Wm9qzjC89RfSaplKDmoRWIbxeaNEuv-aEfuxJrP1r56HTbro&usqp=CAU);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .up ul{
+    text-align: center;
+    color: black;
+}    
+.b2 .down .overlay {
+    position: inherit;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgba(245, 241, 247, 0.322);
+    text-align: center;
+}  
+.b3{
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://i.pinimg.com/736x/6e/93/9c/6e939ca17bf45cec4ee6948423050dda.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b3 .overlay{
+    justify-content: right;
+    padding: 5vh;
+    color:white;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: auto;
+    
+   
+}
+.b3 .overlay p{
+    padding: 4vh;
+    text-align: center;
+    color: rgb(240, 235, 235);
+    min-height: auto;
+    
+}
+
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width: 100%;
+        margin-left: initial;
+    }
+}
+
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text .image{
+        height: 200px;
+        width:140px;
+        margin-top:20px;
+    }
+    .rtext p{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+     .icons{
+        margin-top: 80px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b3{
+        width: 100%;
+        background-position: left;
+    }
+}
